@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="kor" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="wafflestay">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>WAFL | Wafflestay</title>
+    <link rel="stylesheet" href="css/vendor.bundle.css?ver=200">
+    <link rel="stylesheet" href="css/style.css?ver=200">
+
+    <!-- Layer popup start -->
+    <script language="JavaScript">
+        function setCookie( name, value, expiredays ) {
+            var todayDate = new Date();
+                todayDate.setDate( todayDate.getDate() + expiredays );
+                document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+
+        function closeWin() {
+            if ( document.notice_form.chkbox.checked ){
+                setCookie( "maindiv", "done" , 1 );
+            }
+            document.all['divpop'].style.visibility = "hidden";
+        }
+
+    </script>
+    
+    <!-- Layer popup end -->
+
+</head>
+
+<body class="nk-body body-wider theme-dark mode-onepage">
+
+    <body class="nk-body body-wider theme-dark mode-onepage">
+        <div class="nk-wrap">
+            <header class="nk-header page-header is-transparent is-sticky is-shrink" id="header">
+                <!-- Popup -->
+                <div id="divpop" style="position:absolute;left:15%;top:150px;z-index:200;visibility:hidden;">
+                    <table width=370px height=340px cellpadding=0 cellspacing=0>
+                        <tr>
+                            <td style="border:1px #666666 solid" height=340px align=center bgcolor=white> 
+                                <a href="#"class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#modal-large"><img src="images/popup_notice_ko.jpg" width=340px height=340px alt="설명설명"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height=10 bgcolor="#000000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <form name="notice_form">
+                                <td height=10 align=left bgcolor="#000000" valign=middle>
+                                    <input type="checkbox" name="chkbox" value="checkbox"> <font color=#eeeeee>오늘 하루 팝업창 안보기 </font>
+                                    <a href="javascript:closeWin();"> <font color=#eeeeee> <B>[닫기]</B> </font></a>
+                                </td> 
+                            </form>
+                        </tr>
+                    </table>
+                </div> 
+                <!-- Header -->
+                <div class="header-main">
+                    <div class="container">
+                        <div class="header-wrap">
+                            <!-- Logo -->
+                            <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".65">
+                                <a href="#" class="logo-link">
+                                    <img class="logo-dark" src="images/logo.png" srcset="images/logo2x.png 2x" alt="logo">
+                                    <img class="logo-light" src="images/logo-full-white.png" srcset="images/logo-full-white2x.png 2x" alt="logo">
+                                </a>
+                            </div>
+                            <!-- Menu Toogle -->
+                            <div class="header-nav-toggle">
+                                <a href="#" class="navbar-toggle" data-menu-toggle="header-menu">
+                                    <div class="toggle-line">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Menu  -->
+                            <div class="header-navbar header-navbar-s2">
+                                <nav class="header-menu justify-content-between" id="header-menu">
+                                    <ul class="menu animated remove-animation" data-animate="fadeInDown" data-delay=".75">
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#introduction">시작하며</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#platform">플랫폼</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#service">서비스</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#system">T2E System</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#roadmap">로드맵</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#document">백서</a></li>
+                                    </ul>
+                                    <ul class="menu-btns align-items-center animated remove-animation" data-animate="fadeInDown" data-delay=".85">
+                                        <li class="language-switcher language-switcher-s2 toggle-wrap">
+                                            <a class="btn btn-rg toggle-tigger btn-outline btn-auto no-change btn-primary" href="#"><span>KR</span><em class="icon ti ti-angle-down"></em></a>
+                                            <ul class="toggle-class toggle-drop drop-list drop-list-mb">
+                                                <li><a href="index.html">EN</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="https://wallet.wafflestay.kr/" target="_blank" class="btn btn-rg btn-secondary no-change"><span>Wallet</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner  -->
+                <div class="header-banner bg-theme-grad-s2">
+                    <div class="nk-banner">
+                        <div class="banner banner-fs banner-single banner-s1 banner-s1-overlay">
+                            <div class="banner-wrap">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-center justify-content-lg-between gutter-vr-60px">
+                                        <div class="col-lg-6 col-xl-6 text-center text-lg-start">
+                                            <div class="banner-caption tc-light">
+                                                <div class="cpn-head mt-0">
+                                                    <h1 class="title title-thin title-xl-1 animated" data-animate="fadeInUp" data-delay="1.25">동영상기반 블록체인<br> 여행 커뮤니티</h1>
+                                                </div>
+                                                <div class="cpn-text cpn-text-s2">
+                                                    <p class="lead-s2 lead-light animated" data-animate="fadeInUp" data-delay="1.35">Travel to Earn (T2E) 보상시스템</p>
+                                                </div>
+                                                <div class="cpn-btns">
+                                                    <ul class="btn-grp animated" data-animate="fadeInUp" data-delay="1.45">
+                                                        <li><a class="btn btn-md btn-primary btn-outline" href="#document">백서다운로드</a></li>
+                                                        <li><a class="btn btn-md btn-primary btn-outline" href="https://wallet.wafflestay.kr/" target="_blank">지갑바로가기</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="cpn-social">
+                                                    <h4 class="title-xs animated" data-animate="fadeInUp" data-delay="1.55">JOIN OUR COMMUNITY</h4>
+                                                    <ul class="social">
+                                                        <li class="animated" data-animate="fadeInUp" data-delay="1.65"><a href="http://t.me/WaffleStay" target="_blank"><em class="social-icon fas fa-paper-plane"></em></a></li>
+                                                        <li class="animated" data-animate="fadeInUp" data-delay="1.75"><a href="http://twitter.com/StayWaffle" target="_blank"><em class="social-icon fab fa-twitter"></em></a></li>
+                                                        <li class="animated" data-animate="fadeInUp" data-delay="1.8"><a href="http://youtube.com/channel/UCzxBEhhubaUBifhz3w9PpQQ" target="_blank"><em class="social-icon fab fa-youtube"></em></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-5 col-md-8 col-sm-9">
+                                            <div class="banner-gfx banner-gfx-re-s1 animated" data-animate="fadeInUp" data-delay=".9">
+                                                <img src="images/main_nft.png" alt="header">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-ovm shape-q"></div>
+                    <div id="particles-bg" class="particles-container particles-bg" data-pt-base="#00c0fa" data-pt-base-op=".3" data-pt-line="#2b56f5" data-pt-line-op=".5" data-pt-shape="#00c0fa" data-pt-shape-op=".2"></div>
+                </div>
+            </header>
+            <main class="nk-pages">
+                <!-- /introduction/ -->
+                <section class="section bg-light" id="introduction">
+                    <div class="container">
+                        <div class="nk-block nk-block-features-s2">
+                            <div class="row align-items-center flex-row-reverse gutter-vr-30px">
+                                <div class="col-lg-5">
+                                    <div class="gfx py-4 mx-auto mx-lg-0 animated" data-animate="fadeInUp" data-delay=".1">
+                                        <img src="images/intro.png" alt="gfx">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <!-- Section Head  -->
+                                    <div class="nk-block-text pdb-r">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">시작하면서</h2>
+                                        <p class="animated" data-animate="fadeInUp" data-delay=".2">개인의 영역에서 보면 여행은 누군가에게는 휴식, 누군가에게는 일이 될 수도 있기에 그 의미는 사람에 따라 다양하다. 특히, 
+                                            소셜미디어의 확장에 따라 여행객들은 단편적인 시선이 아니라 다양한 관점을 담은 여행을 즐기는 방법 및 여행과 관련된 경험, 
+                                            의견, 생각 등을 게시하고 공유하며 다른 여행자에게 정보를 제공하기도 한다</p>
+                                        <p class="animated" data-animate="fadeInUp" data-delay=".3">만일 여행객 스스로가 경험한 여행의 정보를 생성하고, 이를 객관적으로 검증하고 다른 여행객의 실제 여행 경험을 바탕으로 보다 
+                                            즐거운 여행을 만들 수 있다면, 또한 이러한 활동들을 통해 정보를 생성한 사람들이 충분한 보상을 받을 수 있다면, 여행은 보다 더 
+                                            다채로워지고, 풍부해지고, 금전적인 부담은 덜어질 수 있다. 이는 기존에 단순한 자기 만족을 위해 정보를 공유하는 
+                                            여행커뮤니티와는 매우 다른 모습을 띄게 될 것이다.</p>
+                                        <p class="animated" data-animate="fadeInUp" data-delay=".4">와플스테이는 여행시장 안에서 글로벌 파트너사와 협업으로 숙박예약 
+                                            서비스를 제공하면서 어떻게 하면 보다 많은 사람들이 여행을 통하여 아이디어와 영감, 인연, 취향의 발견 등 단순한 쉼을 넘어서 
+                                            많은 가치를 얻을 수 있을지를 고민해왔으며, 이제 숙박예약 서비스를 넘어 여행의 가치를 공유하는 여행커뮤니티를 꿈꾸고 그 꿈을 
+                                            실현시키고자 한다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /platform/ -->
+                <section class="section bg-white section-about" id="platform">
+                    <div class="container">
+                        <div class="nk-block">
+                            <div class="row gutter-vr-30px align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="nk-block-text">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">여행산업에서 블록체인</h2>
+                                        <p>와플스테이 앱의 기반이 되는 블록체인의 검증 시스템은 자체적인 사용증명(Proof of Usage)를 사용하는데 이는 소셜 마이닝의 
+                                            개념을 사적 블록체인에 주로 쓰이는 권위증명(Proof of Authority)에 융합한 합의 알고리즘이다.</p>
+                                        <p>와플 네크워크의 사용증명의 근간이 되는 권위증명의 핵심은 검증자 신원의 확실성이다.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="nk-block-video">
+                                        <img src="images/platform.png" alt="platform">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="nk-block nk-block-about">
+                            <div class="row gutter-vr-30px align-items-center justify-content-between">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="nk-block-text">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Service Layer</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-8">
+                                    <div class="nk-block-text">
+                                        <p>Service Layer는 와플스테이의 코어로직이 실행되고 핵심데이터가 저장되는 영역으로 스마트 계약, Data Storage(Blockchain, 
+                                            InterPlanetary File System - 이하 IPFS, Hybrid), 기타 서비스 로직으로 구성된다. API Layer에서 유입된 여행정보 데이터는 
+                                            와플스테이 코어의 스마트 계약을 이행한 후 블록체인에 기록된다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="nk-block nk-block-about">
+                            <div class="row gutter-vr-30px align-items-center justify-content-between">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="nk-block-text">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Application Layer</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-8">
+                                    <div class="nk-block-text">
+                                        <p>Application Layer는 여행을 하고 싶거나, 여행중이거나, 여행을 좋아하는 모든 유저들의 편리한 접근성을 위하여 웹과 모바일 
+                                            형태의 애플리케이션을 제공한다. 이를 통해 여행이라는 하나의 틀안에서 자체 커뮤니티들이 생성되며 유저들이 이용할 수 있는 
+                                            최적의 UI/UX를 제공하고, 다른 유저들과의 소통을 통하여 정보를 공유하고 감정적인 지지를 얻는 등의 활동이 자연스럽게 
+                                            이루어지는 환경을 구성한다. 또 생태계를 통해 와플스테이 플랫폼 안에서 사용할 수 있는 다양한 서비스를 제공한다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /service/ -->
+                <section class="section bg-light" id="service">
+                    <div class="container">
+                        <div class="nk-block nk-block-features-s3">
+                            <div class="section-head section-head-s7 wide-auto-sm text-center">
+                                <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Services</h2>
+                                <p class="lead animated" data-animate="fadeInUp" data-delay=".2">제안하는 서비스</p>
+                            </div>
+                            <div class="row justify-content-center gutter-vr-30px">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-user-chat"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">동영상 기반 블록체인 여행 커뮤니티</h4>
+                                            <p class="fw-4">와플스테이는 여행객이 스스로 동영상을 창출하고 공유하며, 모든 고객이 여행지에 대한 정보를 다른 여행객이 생성한 
+                                                동영상을 통하여 쉽게 확인하고 여행을 준비할 수 있도록 한다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".4">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-wallet"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold"> Travel to Earn(T2E) 보상시스템</h4>
+                                            <p class="fw-4">와플스테이 생태계 참여자들은 본인이 경험한 여행코스, 맛집, 명소 등의 정보를 선점하고, 스마트컨트렉트를 통하여 와플스테이 
+                                                블록체인 상에 등록을 하면, 이들은 해당 여행지의 소유자로 인정을 받으며 와플크리에이터로 활동하게 된다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".5">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-icon"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">여행 동영상 공유 허브</h4>
+                                            <p class="fw-4">와플스테이는 생태계 참여자들이 관심있는 여행관련 동영상을 와플스테이 플랫폼에 링크하고, 쉽게 큐레이션을 하고, 이를 
+                                                자신의 주위 사람들과 공유하고, 공유한 기록도 편리하게 관리할 수 있는 도구를 제공하고자 한다. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-cloud"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">여행 크리에이터 중개 서비스</h4>
+                                            <p class="fw-4">와플스테이는 와플크리에이터가 전문적인 여행 작가로서 활동하기를 원할 경우, 여행업체와 매칭 서비스를 제공한다.와플 크리에이터는 제작할 여행지의 영상 길이와 지역, 
+                                                자신이 작업할 시간 정보 등을 담은NFT를 발행한다.  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".4">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-globe"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">NFT로 선물하는 여행</h4>
+                                            <p class="fw-4"> 숙박교환권은 특정호텔을 기준으로 해당 호텔이 발급하며, 예약날짜를 미지정한 상태로 발급되어 구매자 자신이 이용하거나 
+                                                지인들에게 교환권을 선물하여 주고, 선물 받은 지인은 와플스테이 앱에 숙박교환권을 등록하고, 숙박할 일자를 선택하여 예약하고 
+                                                사용할 수 있다. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // -->
+                <section class="section bg-theme ov-h text-center tc-light overlay-x">
+                    <div class="container">
+                        <div class="nk-block nk-block-text-wrap">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col">
+                                    <div class="nk-block-text">
+                                        <h3 class="fw-3 pb-2"><span class="h1 fw-3 pb-3 d-block animated" data-animate="fadeInUp" data-delay=".1">OTA Service</span> <span class="d-block animated" data-animate="fadeInUp" data-delay=".2">와플스테이는 글로벌 OTA와 협력으로 한국의 호텔 11,600여 곳을 대상으로 숙소예약 서비스를 제공하고 있으.</span></h3>
+                                        <p class="lead-s2 animated" data-animate="fadeInUp" data-delay=".3">2022년 4분기 일본을 시작으로 단계별로 2023년 하반기까지<br> 전세계 260만개 
+                                            숙박업소에 대한 예약서비스를 제공할 예정이다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /work/ -->
+                <section class="section bg-white ov-h text-center" id="system">
+                    <div class="section-head section-head-s7 wide-auto-xs">
+                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Travel to Earn(T2E) 보상시스템</h2>
+                        <p class="lead animated" data-animate="fadeInUp" data-delay=".2">T2E(Travel to Earn) 개념의 유저보상시스템 구축</p>
+                    </div>
+                    <div class="container">
+                        <div class="nk-block nk-block-text-wrap">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="feature-slider-dots  animated" data-animate="fadeInUp" data-delay=".3">
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-icon"></em>
+                                        </button>
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-wallet-digital"></em>
+                                        </button>
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-document-3"></em>
+                                        </button>
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-cash-1"></em>
+                                        </button>
+                                    </div>
+                                    <div class="feature-slider-pane has-carousel owl-carousel" data-items="1" data-dots="true" data-custom-dots="feature-slider-dots" data-animate-out="fadeOut">
+                                        <div class="ft-slider-pane-item pane-item-1">
+                                            <h5 class="animate-up delay-5ms">1. 와플 크리에이터</h5>
+                                            <p class="animate-up delay-6ms">코스개발자는 여행코스, 맛집, 명소
+                                                정보를 등록함<br> (Smart contract)</p>
+                                        </div>
+                                        <div class="ft-slider-pane-item pane-item-2">
+                                            <h5 class="animate-up delay-5ms">2. 와플스테이 앱</h5>
+                                            <p class="animate-up delay-6ms">와플 고객은 와플스테이 앱으로<br>
+                                                여행코스, 맛집, 명소 정보를
+                                                이용함.</p>
+                                        </div>
+                                        <div class="ft-slider-pane-item pane-item-3">
+                                            <h5 class="animate-up delay-5ms">3. 와플스테이 고객</h5>
+                                            <p class="animate-up delay-6ms">와플 고객은 실제 서비스 사용시<br>
+                                                위치기반 NFT 발급</p>
+                                        </div>
+                                        <div class="ft-slider-pane-item pane-item-4">
+                                            <h5 class="animate-up delay-5ms">4. 위치기반 NFT</h5>
+                                            <p class="animate-up delay-6ms">위치기반 NFT 발급내역을 바탕으로<br> WAFL토큰으로 수익분배</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // -->
+                <section class="section bg-light">
+                    <div class="container">
+                        <!-- Block  -->
+                        <div class="nk-block nk-block-features-s2">
+                            <div class="row align-items-center flex-row-reverse justify-content-between gutter-vr-30px">
+                                <div class="col-lg-7">
+                                    <div class="gfx gfx-auto mb-lg-3 animated" data-animate="fadeInUp" data-delay=".1">
+                                        <img src="images/video_based.png" alt="gfx">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <!-- Section Head  -->
+                                    <div class="section-head pb-lg-0">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".2">동영상 기반 블록체인 여행 커뮤니티</h2>
+                                        <p class=" animated" data-animate="fadeInUp" data-delay=".3">와플스테이는 여행객이 생성한 콘텐츠의 품질을 높이기 위하여 동영상 전문가 풀을 통해 편집하고, 와플스테이 뿐만 아니라, 
+                                            유튜브 채널 등 다양한 채널에 배포하여 동영상의 노출을 높일 계획이다.</p>
+                                    </div><!-- .section-head  -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /roadmap/ -->
+                <section class="section bg-theme tc-light ov-h" id="roadmap">
+                    <div class="container">
+                        <div class="section-head text-center wide-auto-sm">
+                            <h4 class="title title-semibold animated" data-animate="fadeInUp" data-delay=".1">로드맵</h4>
+                        </div>
+                        <div class="nk-block">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12">
+                                    <div class="roadmap-all mgb-m50 animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="roadmap-wrap roadmap-wrap-done roadmap-wrap-s1 mb-0">
+                                            <div class="row g-0">
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2022 Q2</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 와플스테이 서비스 (ver1.0) 오픈</li>
+                                                                <li>&#149 대한민국 호텔대상 예약서비스</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2022 Q3</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 메인넷 개발시작</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2022 Q4</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 메인넷 개발 (Ver. 0.8)<br>
+                                                                    &#149 Geo-Minting NFT 개발완료<br>
+                                                                    &#149 와플 크리에이터 플랫폼 개발<br>
+                                                                    &#149 BWB Geo-Minting NFT 서비스 오픈<br>
+                                                                    &#149 BEXCO 숙박 예약서비스 연동</li>
+                                                                <li>&#149 일본호텔 예약시작<br>
+                                                                    &#149 WAFL 토큰 발행<br>
+                                                                    &#149 글로벌거래소 상장</li>    
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
+                                            <div class="row flex-row-reverse g-0">
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-current roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q1</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 메인넷 개발 (ver 0.9)<br>
+                                                                    &#149 와플스테이 서비스 (Ver. 2.0)개발<br>
+                                                                    &#149 와플스테이 지갑개발완료<br>
+                                                                    &#149 와플크리에이터 지원시스템 개발 완료
+                                                                </li>
+                                                                <li>&#149 동남아 호텔예약 시작<br>
+                                                                    &#149 미주 호텔예약 시작
+                                                                </li>    
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q2</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 숙박교환권, 상품권 NFT 서비스시작<br>
+                                                                    &#149 Time-Minting NFT 서비스시작<br>
+                                                                    &#149 호텔관리시스템 개발<br>
+                                                                </li>
+
+                                                                <li>&#149 기타지역 호텔예약 시작<br>
+                                                                    &#149 글로벌거래소 추가상장
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q3</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 호텔관리시스템 개발 완료<br>
+                                                                    &#149 항공권 예약서비스 시작<br>
+                                                                    &#149 렌터카 예약서비스 시작<br>
+                                                                </li>
+                                                                <li>&#149 동영상 서비스 확대 (2만건 이상)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-wrap roadmap-wrap-s1 mb-lg-0">
+                                            <div class="row g-0">
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q4</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 여행 코스 NFT 코스확대<br>
+                                                                    &#149 국내 호텔 주변 식당 / 상점 결제서비스 확대<br>
+                                                                </li>
+                                                                <li>&#149 글로벌 거래소 추가 상장</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2024 Q1</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 호텔예약 오픈 API 개발<br>
+                                                                    &#149 Direct 호텔 등록관리 시스템 개발
+                                                                </li>
+                                                                <li>&#149 동영상 서비스 확대 (5만건 이상)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1"></span>
+                                                                <span class="roadmap-title roadmap-title-s1"></span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-ovm shape-n"></div>
+                </section>
+    
+                <!-- /whitpaper/ -->
+                <section class="section bg-white section-document" id="document">
+                    <div class="container">
+                        <div class="section-head text-center wide-auto">
+                            <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Whitepaper</h2>
+                            <p class="animated" data-animate="fadeInUp" data-delay=".2">Copyright by WAFFLESTAY</p>
+                        </div>
+                        <div class="nk-block nk-block-document">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="card card-lg animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6">
+                                                <div class="nk-block-img px-4 pb-4 pb-md-0">
+                                                    <img src="images/whitepaper.png" alt="doc">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="nk-block-text">
+                                                    <h4 class="title title-md">백서 읽기</h4>
+                                                    <p> 현대사회에서 관광산업은 지속적인 확장과 다변화로 세계에서 가장 빠르게 성장해온 산업 분야 중 하나이다.</p>
+                                                    <ul class="btn-grp gutter-30px gutter-vr-20px">
+                                                        <li><a href="Wafflestay-whitepaper-KR_v1.02.pdf" target="_blank" class="btn btn-grad">백서다운로드</a></li>
+                                                        <li><a href="WAFL-AUDIT-T142223Z.pdf" target="_blank" class="btn btn-google"><span>AUDIT 다운로드</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // -->
+                <section class="section section-s bg-light">
+                    <div class="container">
+                        <div class="nk-block block-partners">
+                            <div class="section-head text-center wide-auto">    
+                                <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Our Partners</h2>
+                            </div>
+                            <ul class="partner-list flex-lg-nowrap mgb-m30">
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".15"><img src="images/pt_nuri.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".2"><img src="images/pt_bto.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".3"><img src="images/pt_synaptic.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".35"><img src="images/pt_gec.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".25"><img src="images/pt_ynf.png" alt="partner"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="nk-footer bg-theme ov-h overlay-x fw-4">
+                <section class="section section-m  tc-light tc-light-alt bg-transparent">
+                    <div class="container">
+                    
+                        <div class="nk-block block-footer">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="wgs wgs-text text-center mb-3">
+                                        <ul class="social pdb-l justify-content-center">
+                                            <li class="animated" data-animate="fadeInUp" data-delay="1.65"><a href="http://t.me/WaffleStay" target="_blank"><em class="social-icon fas fa-paper-plane"></em></a></li>
+                                            <li class="animated" data-animate="fadeInUp" data-delay="1.75"><a href="http://twitter.com/StayWaffle" target="_blank"><em class="social-icon fab fa-twitter"></em></a></li>
+                                            <li class="animated" data-animate="fadeInUp" data-delay="1.8"><a href="http://youtube.com/channel/UCzxBEhhubaUBifhz3w9PpQQ" target="_blank"><em class="social-icon fab fa-youtube"></em></a></li>
+                                        </ul>
+                                        <a href="./" class="footer-logo">
+                                            <img src="images/logo-full-white.png" srcset="images/logo-full-white.png" alt="logo">
+                                        </a>
+                                        <div class="copyright-text copyright-text-s3 pdt-m">
+                                            <p><span class="d-sm-block">Copyright &copy; 2022, WaffleStay Inc. All rights reserved.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </div>
+
+        <!-- modal -->
+        <p><a class="btn" href="#modal-large">도달창띄우기2</a></p>
+        <div class="modal fade" id="modal-large" >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <a href="#" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                    <div class="modal-body p-md-4 p-lg-5">
+                        <h3 class="title">거래소공지</h3>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <p>제목 : [안내] 와플스테이(WAFL) 메인넷 변경 및 토큰 스왑에 따른 입금 및 거래 지원 일시 중단 안내 (입금 중단 시점 : 2023/03/09 00:00 GMT+9 ~)</p>
+                            </div>
+                        </div>
+                        <h3 class="title title-md">내용</h3>
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <p>WAFL 기존 입금 주소는 입금 중단 시점 (03/09/01 11:00) 이후 이용 불가합니다.<br> 
+                                    아래 안내 내용을 참고하시어 WAFL 착오전송이 발생하지 않도록 주의해 주시기 바랍니다.</p>
+                                <p>입금 중단 시점 (03/09 00:00 GMT+9) 이후, 기존 ERC-20 입금 주소로 WAFL 입금 시, 복구에 오랜 기간이 소요되며 복구 수수료가 발생합니다.<br>
+                                    또한, 복구 시 이전 네트워크(ERC-20)로 복구가 됩니다.</p>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <p>이점 유의하시어 입출금 중단 시점 이후 절대 WAFL를 입금하지 마시길 바랍니다.</p>
+                                <p>와플스테이(WAFL) 메인넷 변경 및 토큰 스왑에 따른 입출금 및 거래 지원 일시 중단 안내를 드리오니 이용에 참고바랍니다.</p>
+                            </div>
+                        </div>
+                        <h3 class="title title-md">WAFL 토큰 메인넷 변경 안내</h3>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <p>변경전 메인넷 : 이더리움(Ethereum) <br>
+                                    변경후 메인넷 : 폴리곤(Polygon)</p>
+                                <p>변경 사유 : 높은 이더리움 네트워크 수수료로 인해 WAFL서비스 거래량 저하 및 가격 저평가되어 저렴한 네트워크수수료를 지불하는 폴리곤으로 전환하여 WAFL서비스 확대로 인한 적정 가격평가하게 함.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="title title-md">WAFL 토큰 스왑 관련 안내</h3>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <p>명칭 및 심볼 변경 : 와플스테이(Wafflestay, WAFL) → 와플스테이(Wafflestay, WAFL <br>
+                                    토큰 스왑 비율 : 1 WAFL : 1 WAFL</p>
+                                <p>토큰 스왑 작업은 와플스테이지갑 계정으로 이체한 후 토큰스왑이 가능합니다. <br>
+                                    가입하신 wallet.wafflestay.kr 로 로그인 후 주소를 복사하여 거래소에서 외부출금합니다.
+                                    </p>
+                                <p>이때 외부출금으로 발생하는 수수료 보상은 스왑시 추가적으로 2WAFL을 지급합니다.<br>
+                                    기타문의 사항은 wafl@wafflestay.kr 로 문의 해주십시오.
+                                    </p>    
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <h3 class="title title-md">입출금 일시 중단 안내</h3>
+                                <p>입금 일시 중단 시점 : 2023-03-09 20:00 KST 예정</p> 
+                                <p>입금 재개 시점 안내 : 메인넷 변경으로 입금을 제한하며, 토큰 스왑 작업이 완료된 후 폴리곤으로 입금이 가능합니다.</p>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <h3 class="title title-md">거래 지원 일시 중단 안내</h3>
+                                <p>대상 마켓 : WAFL/USDT</p>
+                                <p>거래 지원 일시 중단 기간 : 2023-03-09 20:00 ~ 메인넷 변경 및 토큰 스왑 작업 완료 시 본 공지를 통해 안내 예정<br>
+                                    거래 지원 재개 시점에 마켓명은 WAFL/USDT로 동일하게 재게됩니다. 
+                                    </p>
+                            </div>
+                        </div>
+
+                        <h3 class="title title-md">유의사항</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>입금 일시 중단 시점 이후 WAFL를 입금 시, 메인넷 변경 및 토큰 스왑 작업 대상에 포함되지 않을 수 있습니다.<br>
+                                    입금 일시 중단 시점 이후 WAFL 입금 시, 계정에 입금이 반영되지 않을 수 있으며, 복구에 오랜 기간이 소요되며 복구 수수료가 발생합니다.<br>                                    
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>착오전송 발생 시 와플스테이팀의 결정에 따라 복구가 불가능할 수도 있습니다.<br>
+                                    이 점 참고하시어 입금 중단 시점 이후 절대로 입금하지 말아주시기 바랍니다.<br>
+                                    작업 시간 동안 이용에 불편을 드려 대단히 죄송합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--modal -->
+        <script>
+            $('a[href="#ex7"]').modal({
+               fadeDuration: 250
+            });
+       </script>
+       
+    
+
+        <!-- Preloader -->
+        <div class="preloader"><span class="spinner spinner-round"></span></div>
+        <!-- JavaScript -->
+        <script src="js/jquery.bundle.js?ver=200"></script>
+        <script src="js/scripts.js?ver=200"></script>
+        <script src="js/charts.js?ver=200"></script>
+        <script src="js/charts.js?ver=200"></script>
+        <script language="Javascript">
+            cookiedata = document.cookie;   
+            if ( cookiedata.indexOf("maindiv=done") < 0 ){ document.all['divpop'].style.visibility = "visible"; }
+                else { document.all['divpop'].style.visibility = "hidden"; }
+        </script>
+
+    </body>
+
+</html>

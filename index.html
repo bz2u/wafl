@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="wafflestay">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>WAFL | Wafflestay</title>
+    <link rel="stylesheet" href="css/vendor.bundle.css?ver=200">
+    <link rel="stylesheet" href="css/style.css?ver=200">
+
+    <!-- Layer popup start -->
+    <script language="JavaScript">
+        function setCookie( name, value, expiredays ) {
+            var todayDate = new Date();
+                todayDate.setDate( todayDate.getDate() + expiredays );
+                document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+
+        function closeWin() {
+            if ( document.notice_form.chkbox.checked ){
+                setCookie( "maindiv", "done" , 1 );
+            }
+            document.all['divpop'].style.visibility = "hidden";
+        }
+
+    </script>
+    
+    <!-- Layer popup end -->
+    
+</head>
+
+<body class="nk-body body-wider theme-dark mode-onepage">
+    <body class="nk-body body-wider theme-dark mode-onepage">
+        <div class="nk-wrap">
+            <header class="nk-header page-header is-transparent is-sticky is-shrink" id="header">
+                <!-- Popup -->
+                <div id="divpop" style="position:absolute;left:15%;top:150px;z-index:200;visibility:hidden;">
+                    <table width=370px height=340px cellpadding=0 cellspacing=0>
+                        <tr>
+                            <td style="border:1px #666666 solid" height=340px align=center bgcolor=white> 
+                                <a href="#"class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#modal-large"><img src="images/popup_notice_en.jpg" width=340px height=340px alt="설명설명"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height=10 bgcolor="#000000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <form name="notice_form">
+                                <td height=10 align=left bgcolor="#000000" valign=middle>
+                                    <input type="checkbox" name="chkbox" value="checkbox"> <font color=#eeeeee>Don't show pop-up window for today </font>
+                                    <a href="javascript:closeWin();"> <font color=#eeeeee> <B>[CLOSE]</B> </font></a>
+                                </td> 
+                            </form>
+                        </tr>
+                    </table>
+                </div> 
+
+                <!-- Header -->
+                <div class="header-main">
+                    <div class="container">
+                        <div class="header-wrap">
+                            <!-- Logo -->
+                            <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".65">
+                                <a href="#" class="logo-link">
+                                    <img class="logo-dark" src="images/logo.png" srcset="images/logo2x.png 2x" alt="logo">
+                                    <img class="logo-light" src="images/logo-full-white.png" srcset="images/logo-full-white2x.png 2x" alt="logo">
+                                </a>
+                            </div>
+                            <!-- Menu Toogle -->
+                            <div class="header-nav-toggle">
+                                <a href="#" class="navbar-toggle" data-menu-toggle="header-menu">
+                                    <div class="toggle-line">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Menu  -->
+                            <div class="header-navbar header-navbar-s2">
+                                <nav class="header-menu justify-content-between" id="header-menu">
+                                    <ul class="menu animated remove-animation" data-animate="fadeInDown" data-delay=".75">
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#introduction">Introduction</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#platform">Platform</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#service">Service</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#system">T2E System</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#roadmap">Roadmap</a></li>
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#document">Whitepaper</a></li>
+                                    </ul>
+                                    <ul class="menu-btns align-items-center animated remove-animation" data-animate="fadeInDown" data-delay=".85">
+                                        <li class="language-switcher language-switcher-s2 toggle-wrap">
+                                            <a class="btn btn-rg toggle-tigger btn-outline btn-auto no-change btn-primary" href="#"><span>EN</span><em class="icon ti ti-angle-down"></em></a>
+                                            <ul class="toggle-class toggle-drop drop-list drop-list-mb">
+                                                <li><a href="index_ko.html">KR</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="https://wallet.wafflestay.kr/" target="_blank" class="btn btn-rg btn-secondary no-change"><span>Wallet</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                   
+                <!-- Banner  -->
+                <div class="header-banner bg-theme-grad-s2">
+                    <div class="nk-banner">
+                        <div class="banner banner-fs banner-single banner-s1 banner-s1-overlay">
+                            <div class="banner-wrap">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-center justify-content-lg-between gutter-vr-60px">
+                                        <div class="col-lg-6 col-xl-6 text-center text-lg-start">
+                                            <div class="banner-caption tc-light">
+                                                <div class="cpn-head mt-0">
+                                                    <h1 class="title title-thin title-xl-1 animated" data-animate="fadeInUp" data-delay="1.25">Video-based Blockchain<br> Travel Community</h1>
+                                                </div>
+                                                <div class="cpn-text cpn-text-s2">
+                                                    <p class="lead-s2 lead-light animated" data-animate="fadeInUp" data-delay="1.35">Travel to Earn (T2E) Rewarding System</p>
+                                                </div>
+                                                <div class="cpn-btns">
+                                                    <ul class="btn-grp animated" data-animate="fadeInUp" data-delay="1.45">
+                                                        <li><a class="btn btn-md btn-primary btn-outline" href="#document">White Paper</a></li>
+                                                        <li><a class="btn btn-md btn-primary btn-outline" href="https://wallet.wafflestay.kr/" target="_blank">Wallet</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="cpn-social">
+                                                    <h4 class="title-xs animated" data-animate="fadeInUp" data-delay="1.55">JOIN OUR COMMUNITY</h4>
+                                                    <ul class="social">
+                                                        <li class="animated" data-animate="fadeInUp" data-delay="1.65"><a href="http://t.me/WaffleStay" target="_blank"><em class="social-icon fas fa-paper-plane"></em></a></li>
+                                                        <li class="animated" data-animate="fadeInUp" data-delay="1.75"><a href="http://twitter.com/StayWaffle" target="_blank"><em class="social-icon fab fa-twitter"></em></a></li>
+                                                        <li class="animated" data-animate="fadeInUp" data-delay="1.8"><a href="http://youtube.com/channel/UCzxBEhhubaUBifhz3w9PpQQ" target="_blank"><em class="social-icon fab fa-youtube"></em></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-5 col-md-8 col-sm-9">
+                                            <div class="banner-gfx banner-gfx-re-s1 animated" data-animate="fadeInUp" data-delay=".9">
+                                                <img src="images/main_nft.png" alt="header">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-ovm shape-q"></div>
+                    <div id="particles-bg" class="particles-container particles-bg" data-pt-base="#00c0fa" data-pt-base-op=".3" data-pt-line="#2b56f5" data-pt-line-op=".5" data-pt-shape="#00c0fa" data-pt-shape-op=".2"></div>
+                </div>
+            </header>
+            <main class="nk-pages">
+                <!-- /introduction/ -->
+                <section class="section bg-light" id="introduction">
+                    <div class="container">
+                        <div class="nk-block nk-block-features-s2">
+                            <div class="row align-items-center flex-row-reverse gutter-vr-30px">
+                                <div class="col-lg-5">
+                                    <div class="gfx py-4 mx-auto mx-lg-0 animated" data-animate="fadeInUp" data-delay=".1">
+                                        <img src="images/intro.png" alt="gfx">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <!-- Section Head  -->
+                                    <div class="nk-block-text pdb-r">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Introduction</h2>
+                                        <p class="animated" data-animate="fadeInUp" data-delay=".2">Travel can be a rest for someone and can work for someone in the personal realm, so its meaning varies from person to person. 
+                                            Travelers post and share experiences, opinions, and thoughts related to travel, not fragmentary views, and provide information to 
+                                            other travelers with the expansion of social media.</p>
+                                        <p class="animated" data-animate="fadeInUp" data-delay=".3">Travel can become more diverse, enriching, and less financially burdensome if the travelers can generate information about their 
+                                            own experiences, and the information is objectively verified and fully rewarded, thus creating more enjoyable trips for other travelers. Waffle Stay will look very different from the existing travel community that shares information for simple self-satisfaction</p>
+                                        <p class="animated" data-animate="fadeInUp" data-delay=".4">Waffle Stay has been working with global partner companies to provide accommodation reservation services in the travel market 
+                                            and has been thinking about how more people can get the best value, such as ideas, inspiration, relationships, and tastes, through 
+                                            traveling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /platform/ -->
+                <section class="section bg-white section-about" id="platform">
+                    <div class="container">
+                        <div class="nk-block">
+                            <div class="row gutter-vr-30px align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="nk-block-text">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Blockchain in the Travel industry</h2>
+                                        <p><strong>The WaffleStay blockchain verification system</strong> uses proprietary Proof of Usage. Proof of Usage is a consensus algorithm that combines the concept of social mining with Proof of Authority which is mainly used in a private blockchain.</p>
+                                        <p>The core of the authority verification, which is the basis of the Proof of Usage of the Waffle network, is the certainty of the verifier's identity.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="nk-block-video">
+                                        <img src="images/platform.png" alt="platform">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="nk-block nk-block-about">
+                            <div class="row gutter-vr-30px align-items-center justify-content-between">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="nk-block-text">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Service Layer</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-8">
+                                    <div class="nk-block-text">
+                                        <p>The service Layer is an area where the core logic of Waffle Stay is executed, and the core data is stored. The service layer consists of smart contracts, Data Storage (Blockchain, InterPlanetary File System) (hereinafter referred to as IPFS, Hybrid), and other service logic. Travel information data introduced from the API Layer is recorded in the blockchain after implementing the smart contract of the Waffle Stay core. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="nk-block nk-block-about">
+                            <div class="row gutter-vr-30px align-items-center justify-content-between">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="nk-block-text">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Application Layer</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-8">
+                                    <div class="nk-block-text">
+                                        <p>The application layer provides web and mobile applications with convenient access to all users who plan or wish to travel. The application layer will provide the most suitable UI/UX for users and creates an environment where activities such as, sharing information and obtaining emotional support through communication with other users are naturally carried out. It also provides various services that can be used in the WaffleStay platform on top of the ecosystem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /service/ -->
+                <section class="section bg-light" id="service">
+                    <div class="container">
+                        <div class="nk-block nk-block-features-s3">
+                            <div class="section-head section-head-s7 wide-auto-sm text-center">
+                                <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Services</h2>
+                                <p class="lead animated" data-animate="fadeInUp" data-delay=".2">Proposed Services</p>
+                            </div>
+                            <div class="row justify-content-center gutter-vr-30px">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-user-chat"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">Video-based Blockchain Travel Community</h4>
+                                            <p class="fw-4">WaffleStay allows travelers to create and share videos on their own, and all customers can prepare for their travel by 
+                                                checking information about travel destinations through videos generated by other travelers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".4">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-wallet"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">Travel to Earn Rewarding System</h4>
+                                            <p class="fw-4">Users in the WaffleStay ecosystem produce and share information such as travel courses, restaurants, and attractions they have experienced, and register on the Waffle Stay blockchain through a smart contract.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".5">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-icon"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">Travel Video Sharing Hub System</h4>
+                                            <p class="fw-4">WaffleStay intends to provide a tool that allows ecosystem users easily link travel-related videos they are interested in, to the Waffle Stay platform, curate them easily, share them with those around them, and 
+                                                conveniently manage the shared records.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-cloud"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">Travel Creator Brokerage Service</h4>
+                                            <p class="fw-4">WaffleStay provides matching services with travel agencies with Waffle creators when Waffle creators want to work as professional travel writers. The Waffle creator publishes an NFT containing information on their location 
+                                                information and available time.  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature-s3 feature-center animated" data-animate="fadeInUp" data-delay=".4">
+                                        <div class="feature-icon feature-icon-auto">
+                                            <em class="icon icon-grd icon-lg ikon ikon-globe"></em>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4 class="title-sm title-semibold">Travel as a gift with NFT vouchers</h4>
+                                            <p class="fw-4">Accommodation vouchers are issued by specific hotels without the reservation date and the buyer himself or herself can use it or 
+                                                gift it to friends. The friend who received the voucher as a gift can register the voucher in the WaffleStay app, select the date to 
+                                                stay and make a reservation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // -->
+                <section class="section bg-theme ov-h text-center tc-light overlay-x">
+                    <div class="container">
+                        <div class="nk-block nk-block-text-wrap">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col">
+                                    <div class="nk-block-text">
+                                        <h3 class="fw-3 pb-2"><span class="h1 fw-3 pb-3 d-block animated" data-animate="fadeInUp" data-delay=".1">OTA Service</span> <span class="d-block animated" data-animate="fadeInUp" data-delay=".2">Waffle Stay provides accommodation reservation services to over 11,600 hotels in Korea in cooperation with Global OTA.</span></h3>
+                                        <p class="lead-s2 animated" data-animate="fadeInUp" data-delay=".3">Starting 
+                                            with Japan in the fourth quarter of 2022, Waffle Stay plans to provide 2.6 million accommodation<br class="d-none d-lg-block"> reservation services around the 
+                                            world by the second half of 2023.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /work/ -->
+                <section class="section bg-white ov-h text-center" id="system">
+                    <div class="section-head section-head-s7 wide-auto-xs">
+                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".1">Travel to Earn(T2E) Rewarding System</h2>
+                        <p class="lead animated" data-animate="fadeInUp" data-delay=".2">Establish a user compensation system with the concept of T2E</p>
+                    </div>
+                    <div class="container">
+                        <div class="nk-block nk-block-text-wrap">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="feature-slider-dots  animated" data-animate="fadeInUp" data-delay=".3">
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-icon"></em>
+                                        </button>
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-wallet-digital"></em>
+                                        </button>
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-document-3"></em>
+                                        </button>
+                                        <button class="feature-slider-dot owl-dots">
+                                            <em class="ikon ikon-cash-1"></em>
+                                        </button>
+                                    </div>
+                                    <div class="feature-slider-pane has-carousel owl-carousel" data-items="1" data-dots="true" data-custom-dots="feature-slider-dots" data-animate-out="fadeOut">
+                                        <div class="ft-slider-pane-item pane-item-1">
+                                            <h5 class="animate-up delay-5ms">1. Waffle Creator</h5>
+                                            <p class="animate-up delay-6ms">Waffle creator register travel course,restaurant,<br> and attraction information(Smart contract)</p>
+                                        </div>
+                                        <div class="ft-slider-pane-item pane-item-2">
+                                            <h5 class="animate-up delay-5ms">2. Wafflestay App</h5>
+                                            <p class="animate-up delay-6ms">WaffleStay users use the Waffle Stay app to get information <br> about travel courses, restaurants, and attractions.</p>
+                                        </div>
+                                        <div class="ft-slider-pane-item pane-item-3">
+                                            <h5 class="animate-up delay-5ms">3. Wafflestay Users</h5>
+                                            <p class="animate-up delay-6ms">WaffleStay users get location-based NTSs <br> when using actual services.</p>
+                                        </div>
+                                        <div class="ft-slider-pane-item pane-item-4">
+                                            <h5 class="animate-up delay-5ms">4. Location-based NFT</h5>
+                                            <p class="animate-up delay-6ms">Distribution of profits through WAFL tokens based on <br> location-based NFT issuance details .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // -->
+                <section class="section bg-light">
+                    <div class="container">
+                        <!-- Block  -->
+                        <div class="nk-block nk-block-features-s2">
+                            <div class="row align-items-center flex-row-reverse justify-content-between gutter-vr-30px">
+                                <div class="col-lg-7">
+                                    <div class="gfx gfx-auto mb-lg-3 animated" data-animate="fadeInUp" data-delay=".1">
+                                        <img src="images/video_based.png" alt="gfx">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <!-- Section Head  -->
+                                    <div class="section-head pb-lg-0">
+                                        <h2 class="title title-thin animated" data-animate="fadeInUp" data-delay=".2">Video-based Blockchain Travel Community</h2>
+                                        <p class=" animated" data-animate="fadeInUp" data-delay=".3">To improve the quality of content 
+                                            generated by travelers, Waffle Stay plans to increase the exposure of videos by editing through a pool of video experts and then 
+                                            distributing them to various channels such as YouTube channels as well as Waffle Stay.</p>
+                                    </div><!-- .section-head  -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /roadmap/ -->
+                <section class="section bg-theme tc-light ov-h" id="roadmap">
+                    <div class="container">
+                        <div class="section-head text-center wide-auto-sm">
+                            <h4 class="title title-semibold animated" data-animate="fadeInUp" data-delay=".1">Roadmap</h4>
+                        </div>
+                        <div class="nk-block">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12">
+                                    <div class="roadmap-all mgb-m50 animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="roadmap-wrap roadmap-wrap-done roadmap-wrap-s1 mb-0">
+                                            <div class="row g-0">
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2022 Q2</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 WaffleStay Service (ver1.0) opens</li>
+                                                                <li>&#149 Reservation services for S. Korea’s Hotels</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2022 Q3</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 Start of app chain development</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2022 Q4</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 App chain development (Ver. 0.8)<br>
+                                                                    &#149 Geo-Minting NFT<br>
+                                                                    &#149 Waffle creator Platform<br>
+                                                                    &#149 BWB Geo-Minting NFT service<br>
+                                                                    &#149 Linked to BEXCO accommodation reservation servic</li>
+                                                                <li>&#149 Reservation services for hotels in Japan<br>
+                                                                    &#149 WAFL Token Issuance<br>
+                                                                    &#149 Listed on the central exchange</li>    
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
+                                            <div class="row flex-row-reverse g-0">
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-current roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q1</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 App chain development (ver 0.9)<br>
+                                                                    &#149 WaffleStay Service (Ver. 2.0)<br>
+                                                                    &#149 WaffleStay Wallet<br>
+                                                                    &#149 Waffle creator support system
+                                                                </li>
+                                                                <li>&#149 Southeast Asia hotel reservation starts<br>
+                                                                    &#149 US hotel reservation starts
+                                                                </li>    
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q2</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 Accommodation voucher, gift certificate NFT service starts<br>
+                                                                    &#149 Time-Minting NFT service<br>
+                                                                    &#149 Hotel Management System<br>
+                                                                </li>
+
+                                                                <li>&#149 Hotels in other regions reservation starts<br>
+                                                                    &#149 Additional listing on the central exchange
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q3</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 Deploy hotel management system<br>
+                                                                    &#149 Ticket reservation service starts<br>
+                                                                    &#149 Rental car reservation service starts<br>
+                                                                </li>
+                                                                <li>&#149 Video service expansion (more than 20,000)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-wrap roadmap-wrap-s1 mb-lg-0">
+                                            <div class="row g-0">
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2023 Q4</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 Travel stamp NFT expansion<br>
+                                                                    &#149 Reservation services for restaurants/shops around hotels<br>
+                                                                </li>
+                                                                <li>&#149 Additional listing on the exchange</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1">2024 Q1</span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li>&#149 Development of Hotel Reservation Open API<br>
+                                                                    &#149 Development of direct Hotel registration management system
+                                                                </li>
+                                                                <li>&#149 Video service expansion (more than 50,000)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                                        <div class="roadmap-step roadmap-step-s1">
+                                                            <div class="roadmap-head roadmap-head-s1">
+                                                                <span class="roadmap-time roadmap-time-s1"></span>
+                                                                <span class="roadmap-title roadmap-title-s1"></span>
+                                                            </div>
+                                                            <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                                <li></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-ovm shape-n"></div>
+                </section>
+    
+                <!-- /whitpaper/ -->
+                <section class="section bg-white section-document" id="document">
+                    <div class="container">
+                        <div class="section-head text-center wide-auto">
+                            <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Whitepaper</h2>
+                            <p class="animated" data-animate="fadeInUp" data-delay=".2">Copyright by WAFFLESTAY</p>
+                        </div>
+                        <div class="nk-block nk-block-document">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="card card-lg animated" data-animate="fadeInUp" data-delay=".3">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6">
+                                                <div class="nk-block-img px-4 pb-4 pb-md-0">
+                                                    <img src="images/whitepaper.png" alt="doc">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="nk-block-text">
+                                                    <h4 class="title title-md">Read the Whitepaper</h4>
+                                                    <p>Tourism is one of the fastest-growing industrial sectors in the world due to continuous expansion and diversification in modern 
+                                                        society.</p>
+                                                    <ul class="btn-grp gutter-30px gutter-vr-20px">
+                                                        <li><a href="Wafflestay-whitepaper-EN_v1.02.pdf" target="_blank" class="btn btn-grad">Download WHite paper</a></li>
+                                                        <li><a href="WAFL-AUDIT-T142223Z.pdf" target="_blank" class="btn btn-google"><span>Download AUDIT (PDF)</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // -->
+                <section class="section section-s bg-light">
+                    <div class="container">
+                        <div class="nk-block block-partners">
+                            <div class="section-head text-center wide-auto">    
+                                <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Our Partners</h2>
+                            </div>
+                            <ul class="partner-list flex-lg-nowrap mgb-m30">
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".15"><img src="images/pt_nuri.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".2"><img src="images/pt_bto.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".3"><img src="images/pt_synaptic.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".35"><img src="images/pt_gec.png" alt="partner"></li>
+                                <li class="partner-logo-s3 animated" data-animate="fadeInUp" data-delay=".25"><img src="images/pt_ynf.png" alt="partner"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+            <!-- Footer -->
+            <footer class="nk-footer bg-theme ov-h overlay-x fw-4">
+                <section class="section section-m  tc-light tc-light-alt bg-transparent">
+                    <div class="container">
+                    
+                        <div class="nk-block block-footer">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="wgs wgs-text text-center mb-3">
+                                        <ul class="social pdb-l justify-content-center">
+                                            <li class="animated" data-animate="fadeInUp" data-delay="1.65"><a href="http://t.me/WaffleStay" target="_blank"><em class="social-icon fas fa-paper-plane"></em></a></li>
+                                            <li class="animated" data-animate="fadeInUp" data-delay="1.75"><a href="http://twitter.com/StayWaffle" target="_blank"><em class="social-icon fab fa-twitter"></em></a></li>
+                                            <li class="animated" data-animate="fadeInUp" data-delay="1.8"><a href="http://youtube.com/channel/UCzxBEhhubaUBifhz3w9PpQQ" target="_blank"><em class="social-icon fab fa-youtube"></em></a></li>
+                                        </ul>
+                                        <a href="./" class="footer-logo">
+                                            <img src="images/logo-full-white.png" srcset="images/logo-full-white.png" alt="logo">
+                                        </a>
+                                        <div class="copyright-text copyright-text-s3 pdt-m">
+                                            <p><span class="d-sm-block">Copyright &copy; 2022, WaffleStay Inc. All rights reserved.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="modal-large" >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <a href="#" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                    <div class="modal-body p-md-4 p-lg-5">
+                        <h3 class="title">Exchange Notice</h3>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <p>TTitle:Temporary suspension of Deposit/transaction support due to migration of the WAFL mainnet and token swap (Suspension of deposit: 2023/09/09 00:00 GMT+9 ~ until further notice) </p>
+                            </div>
+                        </div>
+                        <h3 class="title title-md">Notes</h3>
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <p>WAFL existing deposit address is not available after the suspension of deposit (03/09/01 11:00).<br> 
+                                  Please refer to the below and be careful not to error transfer WAFL.</p>
+                                <p>WAFL depositing to existing ERC-20 deposit address after the deposit suspension (03/09 00:00 GMT+9), recovery takes a long time and a recovery fee is incurred. Also, upon recovery, it is restored to the previous network (ERC-20).</p>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <p>Please be aware that, never deposit WAFL and after the suspension of deposits/withdrawals.</p>
+                                <p>Please be aware that the suspension of deposit/withdrawal and transaction support due to Waffle Stay (WAFL) mainnet migration and token swap.</p>
+                            </div>
+                        </div>
+                        <h3 class="title title-md">WAFL Token Mainnet Migration Notice</h3>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <p>Before: Ethereum <br>
+                                   After: Polygon</p>
+                                <p>Reason for migration: Due to high Ethereum network fees, the transaction volume and value of the WAFL service decreased and the value was undervalued, so it was converted to a polygon that pays a low network fee to evaluate the appropriate value due to the expansion of the WAFL service</p>
+                            </div>
+                        </div>
+
+                        <h3 class="title title-md">Notice on WAFL Token Swap</h3>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <p>Name and symbol change: Wafflestay (WAFL) → Wafflestay (WAFL) <br>
+                                    Swap Ratio: 1 WAFL(ERC-20) : 1 WAFL(POLY)</p>
+                                <p>Token swap is possible after transferring the tokens to the Waffle Stay wallet.<br>
+                                    After logging in with the registered wallet. wafflestay.kr, copy your address and withdraw from the exchange, and transfer it to your Wafflestay wallet.
+                                    </p>
+                                <p>In this case, an additional 2WAFL is paid at the time of swap as a compensation for the fee incurred by external withdrawal.<br>
+                                    For other inquiries, please contact wafl@wafflestay.kr
+                                    </p>    
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <h3 class="title title-md">Notice of Temporary Suspension of Deposits/Withdrawals</h3>
+                                <p>Suspension of deposit date: 2023-03-09 20:00 KST</p> 
+                                <p>When to restart deposits: Deposits to exchanges are restricted due to mainnet migration, and deposits can be made to the polygon network address after the token swap operation is completed.</p>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <h3 class="title title-md">Suspension of Transaction Support</h3>
+                                <p>Target Market: WAFL/USDT</p>
+                                <p>Transaction support suspension period: 2023-03-09 20:00 ~ Will be notified through this notice when the mainnet transfer and swap operations are completed.<br>
+                                    When restart trading support, Market name will be reverted to WAFL/USDT
+                                    </p>
+                            </div>
+                        </div>
+
+                        <h3 class="title title-md">Notice</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>When depositing WAFL after the temporary suspension of deposits, it may not be included in the mainnet migration and token swap.<br>
+                                    When depositing WAFL after the deposit suspension, it may not be reflected in the account, and recovery will take a long time and a recovery fee will be charged<br>                                    
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Occurred of an error transmission, recovery may not be possible depending on the decision of the Waffle Stay team.<br>
+                                    Please refer to notice and never make a deposit after the time of suspension of deposit.<br>
+                                    Sorry for any inconvenience this may cause during our working hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--modal -->
+    
+
+        <!-- Preloader -->
+        <div class="preloader"><span class="spinner spinner-round"></span></div>
+        <!-- JavaScript -->
+        <script src="js/jquery.bundle.js?ver=200"></script>
+        <script src="js/scripts.js?ver=200"></script>
+        <script src="js/charts.js?ver=200"></script>
+        <script src="js/charts.js?ver=200"></script>
+        <script language="Javascript">
+            cookiedata = document.cookie;   
+            if ( cookiedata.indexOf("maindiv=done") < 0 ){ document.all['divpop'].style.visibility = "visible"; }
+                else { document.all['divpop'].style.visibility = "hidden"; }
+        </script>
+    </body>
+
+</html>
